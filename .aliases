@@ -1,0 +1,11 @@
+alias ll="ls -la"
+
+# cd and then ls
+cl() { cd "$@" && ls; }
+
+alias oldest="ls -lacr | tail -n 1"
+alias newest="ls -lac | tail -n 1"
+
+alias bx="bundle exec"
+
+alias elasticsearch-docker="docker run -p 9200:9200 -e "http.host=0.0.0.0" -e "transport.host=127.0.0.1" docker.elastic.co/elasticsearch/elasticsearch:5.2.2"
